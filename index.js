@@ -4,6 +4,10 @@ function dropMenu(x) {
   document.getElementById("menuDropdown").classList.toggle("show");
 
 }
+// Prevent window.onclick from closing the dropdown when clicking the button
+document.querySelector('.menuDrop').addEventListener('click', function(event) {
+  event.stopPropagation();
+});
 window.onclick = function(event) {
     if (!event.target.matches('.menuDrop')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");

@@ -51,3 +51,10 @@
 .show {
   display: block;
 }
+
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    background-color: #69696969;
+} 
